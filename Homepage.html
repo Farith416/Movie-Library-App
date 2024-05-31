@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">Movie Library</div>
+        <button id="signOutButton">Sign Out</button>
+    </div>
+    <div class="container">
+        <h1>Welcome to Movie Library</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for movies...">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="searchResults" class="results"></div>
+        <div class="create-list">
+            <h2>Create a New Movie List</h2>
+            <input type="text" id="listNameInput" placeholder="List Name">
+            <select id="listVisibility">
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+            <button id="createListButton">Create List</button>
+        </div>
+        <div class="user-lists">
+            <h2>Your Movie Lists</h2>
+            <div id="userLists"></div>
+        </div>
+    </div>
+
+    <div id="signOutModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to sign out?</p>
+            <button id="confirmSignOutButton">Yes</button>
+            <button id="cancelSignOutButton">No</button>
+        </div>
+    </div>
+
+    <div id="addToListModal" class="modal">
+        <div class="modal-content">
+            <h2>Add to List</h2>
+            <input type="text" id="listNameToAddInput" placeholder="Enter list name">
+            <button id="addToSelectedListButton">Add</button>
+            <button id="cancelAddToListButton">Cancel</button>
+        </div>
+    </div>
+
+    <div id="deleteConfirmationModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this movie?</p>
+            <button id="confirmDeleteButton">Delete</button>
+            <button id="cancelDeleteButton">Cancel</button>
+        </div>
+    </div>
+
+    <div id="deleteListModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this list?</p>
+            <button id="confirmDeleteButton2">Delete</button>
+            <button id="cancelDeleteButton2">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
